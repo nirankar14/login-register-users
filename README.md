@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Login/Register page, show users data using axios
+
+In this project, you will be able to see login-register and storing it inside localstorage. After user logged-in successfully. He/She will be able to see his username with welcome msg, also fetched fake api data using axios and showing them repectively.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
