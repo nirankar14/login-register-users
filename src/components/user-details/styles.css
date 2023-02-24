@@ -1,0 +1,54 @@
+body{
+  font-family: 'Barlow', sans-serif;
+  background-color: rgba(247, 255, 255, 0.8)
+}
+.username{
+  color: brown;
+}
+.heading{
+  font-color:
+
+}
+.user-details-container{
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -30%;
+  transition: right 0.5s;
+  overflow: auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.user-details-container.open{
+  right: 0;
+  z-index: 100;
+}
+.bg-color{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.close-btn{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.user-details-panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #ddd; */
+  padding: 20px;
+  max-width: 400px;
+}
+
+.user-details-panel img{
+  max-width: 100%;
+  margin-bottom: 20px;
+
+}
