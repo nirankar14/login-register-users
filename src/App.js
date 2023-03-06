@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate
+} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/navbar";
 import Login from "./components/login/login";
@@ -11,8 +16,8 @@ function App() {
   return (
     <Router>
       <Navbar />
-      {/* <div className="App">Main page</div> */}
       <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" exact element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/userDetails" element={<UserDetails />} />
@@ -20,5 +25,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
